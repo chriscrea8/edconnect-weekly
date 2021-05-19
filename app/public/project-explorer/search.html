@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
+            <a href="index.html" class="navbar-brand">Project Explorer</a>
+
+            <form class="form-inline" name="searchForm">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Projects">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="createproject.html" class="nav-item nav-link">Submit</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <main class="mt-5 mb-5">
+            <div class="container">
+                <h4>Project Gallery</h4>
+
+                <div class="bg-light p-3 mt-3 mb-5">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="col-7">
+                                <div class="form-group">
+                                    <label for="searchBox" class="col-form-label sr-only">Email</label>
+                                    <input type="text" class="form-control form-control-lg" id="searchBox"
+                                        placeholder="Search project name, authors, abstract, tags">
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="searchBy" class="col-form-label sr-only">Search by</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Search by</div>
+                                        </div>
+                                        <select name="" id="searchBy" class="form-control form-control-lg">
+                                            <option selected value="">Name</option>
+                                            <option value="">Author</option>
+                                            <option value="">Abstract</option>
+                                            <option value="">Tags</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col">
+                                <button class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="container">
+                    <h6>All Projects (0 results)</h4>
+                        <hr class="w-50 ml-0">
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Title</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of
+                                            the card's content.</p>
+                                        <a href="#" class="card-link">#html</a>
+                                        <a href="#" class="card-link">#css</a>
+                                        <a href="#" class="card-link">#javascript</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project Title</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Author 1, Author 2</h6>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up the bulk of
+                                            the card's content.</p>
+                                        <a href="#" class="card-link">#html</a>
+                                        <a href="#" class="card-link">#css</a>
+                                        <a href="#" class="card-link">#javascript</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer-copyright navbar-nav bg-light py-3">
+            <p class="mt-0 mb-0 ml-auto mr-3">Project Explorer &copy; 2020 - Edconnect</p>
+        </footer>
+    </div>
+</body>
+
+</html>
